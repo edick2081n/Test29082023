@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Квартиры</title>
+</head>
+<body>
+
+<center>
+    <h1>ПЕРЕЧЕНЬ СВОБОДНЫХ КВАРТИР</h1>
+
+    {% for flat in flat_list %}
+        <p><a href="/{{ flat.id }}/">КВАРТИРА {{ flat}}</a></p>
+    {% endfor %}
+</center>
+
+    <p><label>
+        <a href="/?sort=true"><button>"Сортировать по площади"
+        </button></a>
+    </label></p>
+
+
+</body>
+</html>
+
